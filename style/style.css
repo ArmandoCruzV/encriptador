@@ -448,4 +448,12 @@ footer {
     #area-mobile {
         color: #2c79bd;
     }
+     
+    aside {
+        display: none;
+    }
+
+    .centro-pagina {
+        display: none;
+    }
   }
