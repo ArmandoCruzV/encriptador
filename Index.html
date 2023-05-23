@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/40/40105.png?w=740&t=st=1684813221~exp=1684813821~hmac=8d2538c50aaa53d22b72766f082cc012f8660d7ef3ea6f42440293fc7d3f28bb">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <title>Encriptador</title>
+</head>
+<body>
+        <header>
+            <img src="./imgs/Logo.png" alt="icono de Alura">
+            <h1>Encriptador AluraChallenge</h1>
+        </header>
+
+        <section class="contenedor-texto-mobile">
+            <textarea type="text" id="area-mobile"
+            placeholder="Ingrese el texto aqui..."></textarea>
+            <p>⚠ Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <div  id="encriptar">
+                    <img 
+                    id="encriptar-boton-mobile"
+                    src="https://cdn-icons-png.flaticon.com/512/116/116009.png?w=740&t=st=1684715787~exp=1684716387~hmac=c8eed71686c1cd5d72526b5e22b4290f53fe1f90d9874fea1f5187f9cd768001"
+                    alt="Icono de encriptar">
+
+                        <div id="engrane1"><p>⚙️</p></div>
+                        <div id="engrane2"><p>⚙️</p></div>
+                        <div id="engrane3"><p>⚙️</p></div>
+                </div>
+                <div id="desencriptar">
+                    <img src="https://cdn-icons-png.flaticon.com/512/52/52889.png?w=740&t=st=1684717266~exp=1684717866~hmac=5364cee16602dd0bdabefc9ec86415eab15f0eb51ed6090b93d60c119f0d340e"
+                    id="desencriptar-boton-mobile"
+                    alt="Icono de desencriptar">
+                    <div id="llave"><p>🔑</p></div>
+                    <div id="candado"><p>🔒</p></div>
+                    <div id="candadoOn"><p>🔓</p></div>
+                </div>
+                
+                    <button id="copiar_texto-mobile" onclick="copiarMobileText()">
+                        <img src="https://cdn-icons-png.flaticon.com/512/14/14862.png?w=740&t=st=1683523143~exp=1683523743~hmac=aeae02d07683e1d39a9b22aa4dcb09af12be668b8cccb34738357e47425433c1" >
+                    </button>
+                
+            </div>
+        </section>
+    
+        <section class="centro-pagina">
+            <section class="contenedor-texto">
+                <textarea id="area"
+                placeholder="Ingrese el texto aqui..."></textarea>
+                <p>⚠ Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <div  id="encriptar">
+                        <input type="button"  
+                        id="encriptar-boton"
+                        value="Encriptar">
+                            <div id="engrane1"><p>⚙️</p></div>
+                            <div id="engrane2"><p>⚙️</p></div>
+                            <div id="engrane3"><p>⚙️</p></div>
+                    </div>
+                    <div id="desencriptar">
+                        <input type="button" 
+                        id="desencriptar-boton"
+                        value="Desencriptar">
+                        <div id="llave"><p>🔑</p></div>
+                        <div id="candado"><p>🔒</p></div>
+                        <div id="candadoOn"><p>🔓</p></div>
+                    </div>
+                </div>
+            </section>
+    
+            <aside> 
+              <textarea none id="asideTextarea"></textarea>
+              <div id="onMensaje">
+                <img class="img-pesona" src="./imgs/Muñeco.png" alt="Chico observando un diamante">
+                <div id="texto-aside">
+                    <p><strong>Ningún mensaje fue encontrado</strong></p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+              </div>
+              <button id="copiar_texto" onclick="copiar()">
+                <img src="https://cdn-icons-png.flaticon.com/512/14/14862.png?w=740&t=st=1683523143~exp=1683523743~hmac=aeae02d07683e1d39a9b22aa4dcb09af12be668b8cccb34738357e47425433c1" >
+              </button>
+            </aside>
+        </section>
+    
+        <footer>
+            <p>® Pagina creada por Armando C.V.</p>
+        </footer>
+</body>
+<script src="./src/main.js"></script>
+</html>
