@@ -1,4 +1,4 @@
-const ENCRIPTAR = document.getElementById('encriptar');
+const ENCRIPTAR = document.getElementById('encriptar'); 
 ENCRIPTAR.addEventListener('click',
  function(){ 
     setTimeout(
@@ -9,12 +9,23 @@ ENCRIPTAR.addEventListener('click',
     animacionEncriptar()
 })
 
+const ENCRIPTARMOBILE = document.getElementById('encriptar-mobile'); 
+ENCRIPTARMOBILE.addEventListener('click',
+ function(){ 
+    setTimeout(
+        function(){
+            offAnimacionEncriptarMobile()
+        },1000)
+    
+    animacionEncriptarMobile()
+})
+
 function animacionEncriptar(){
-    var engrane1 = document.getElementById('engrane1');
-    var engrane2 = document.getElementById('engrane2');
-    var engrane3 = document.getElementById('engrane3');
-    var encriptar = document.getElementById('encriptar');
-    var encriptarBoton = document.getElementById('encriptar-boton');
+    let engrane1 = document.getElementById('engrane1');
+    let engrane2 = document.getElementById('engrane2');
+    let engrane3 = document.getElementById('engrane3');
+    let encriptar = document.getElementById('encriptar');
+    let encriptarBoton = document.getElementById('encriptar-boton');
     engrane1.style.display = 'flex';
     engrane2.style.display = 'flex';
     engrane3.style.display = 'flex';
@@ -22,12 +33,43 @@ function animacionEncriptar(){
     encriptarBoton.style.color = 'transparent';
     encriptarBoton.style.background = 'transparent';
 }
+
+function animacionEncriptarMobile(){
+    let engrane1 = document.getElementById('engrane1-mobile');
+    let engrane2 = document.getElementById('engrane2-mobile');
+    let engrane3 = document.getElementById('engrane3-mobile');
+    let encriptar = document.getElementById('encriptar-mobile');
+    let encriptarBoton = document.getElementById('encriptar-boton-mobile');
+    engrane1.style.display = 'flex';
+    engrane2.style.display = 'flex';
+    engrane3.style.display = 'flex';
+    encriptar.style.background = 'transparent';
+    encriptarBoton.style.color = 'transparent';
+    encriptarBoton.style.background = 'transparent';
+}
+
 function offAnimacionEncriptar(){
-    var engrane1 = document.getElementById('engrane1');
-    var engrane2 = document.getElementById('engrane2');
-    var engrane3 = document.getElementById('engrane3');
-    var encriptar = document.getElementById('encriptar');
-    var encriptarBoton = document.getElementById('encriptar-boton');
+    let engrane1 = document.getElementById('engrane1');
+    let engrane2 = document.getElementById('engrane2');
+    let engrane3 = document.getElementById('engrane3');
+    let encriptar = document.getElementById('encriptar');
+    let encriptarBoton = document.getElementById('encriptar-boton');
+    engrane1.style.display = 'none';
+    engrane2.style.display = 'none';
+    engrane3.style.display = 'none';
+    encriptar.style.background = '';
+    encriptar.style.transition = '1s'
+    encriptarBoton.style.color = '';
+    encriptarBoton.style.background = '';
+    encriptarBoton.style.transition = '1s'
+}
+
+function offAnimacionEncriptarMobile(){
+    let engrane1 = document.getElementById('engrane1-mobile');
+    let engrane2 = document.getElementById('engrane2-mobile');
+    let engrane3 = document.getElementById('engrane3-mobile');
+    let encriptar = document.getElementById('encriptar-mobile');
+    let encriptarBoton = document.getElementById('encriptar-boton-mobile');
     engrane1.style.display = 'none';
     engrane2.style.display = 'none';
     engrane3.style.display = 'none';
@@ -49,12 +91,23 @@ function(){
     animacionDesencriptar()
 });
 
+const DESENCRIPTARMOBILE = document.getElementById('desencriptar-mobile');
+DESENCRIPTARMOBILE.addEventListener('click',
+function(){
+    setTimeout(
+        function(){
+            offAnimacionDesencriptarMobile()
+        },1000)
+    
+    animacionDesencriptarMobile()
+});
+
 function animacionDesencriptar(){
-    var llave = document.getElementById('llave');
-    var candado = document.getElementById('candado');
-    var candadoOn = document.getElementById('candadoOn');
-    var desencriptar = document.getElementById('desencriptar');
-    var desencriptarBoton = document.getElementById('desencriptar-boton');
+    let llave = document.getElementById('llave');
+    let candado = document.getElementById('candado');
+    let candadoOn = document.getElementById('candadoOn');
+    let desencriptar = document.getElementById('desencriptar');
+    let desencriptarBoton = document.getElementById('desencriptar-boton');
     llave.style.display = 'flex';
     candado.style.display = 'flex';
     candadoOn.style.display = 'flex';
@@ -62,12 +115,43 @@ function animacionDesencriptar(){
     desencriptarBoton.style.color = 'transparent';
     desencriptarBoton.style.background = 'transparent';
 }
+
+function animacionDesencriptarMobile(){
+    let llave = document.getElementById('llave-mobile');
+    let candado = document.getElementById('candado-mobile');
+    let candadoOn = document.getElementById('candadoOn-mobile');
+    let desencriptar = document.getElementById('desencriptar-mobile');
+    let desencriptarBoton = document.getElementById('desencriptar-boton-mobile');
+    llave.style.display = 'flex';
+    candado.style.display = 'flex';
+    candadoOn.style.display = 'flex';
+    desencriptar.style.background = 'transparent';
+    desencriptarBoton.style.color = 'transparent';
+    desencriptarBoton.style.background = 'transparent';
+}
+
 function offAnimacionDesencriptar(){
-    var llave = document.getElementById('llave');
-    var candado = document.getElementById('candado');
-    var candadoOn = document.getElementById('candadoOn');
-    var desencriptar = document.getElementById('desencriptar');
-    var desencriptarBoton = document.getElementById('desencriptar-boton');
+    let llave = document.getElementById('llave');
+    let candado = document.getElementById('candado');
+    let candadoOn = document.getElementById('candadoOn');
+    let desencriptar = document.getElementById('desencriptar');
+    let desencriptarBoton = document.getElementById('desencriptar-boton');
+    llave.style.display = 'none';
+    candado.style.display = 'none';
+    candadoOn.style.display = 'none';
+    desencriptar.style.background = '';
+    desencriptar.style.transition = '1s'
+    desencriptarBoton.style.color = '';
+    desencriptarBoton.style.background = '';
+    desencriptarBoton.style.transition = '1s'
+}
+
+function offAnimacionDesencriptarMobile(){
+    let llave = document.getElementById('llave-mobile');
+    let candado = document.getElementById('candado-mobile');
+    let candadoOn = document.getElementById('candadoOn-mobile');
+    let desencriptar = document.getElementById('desencriptar-mobile');
+    let desencriptarBoton = document.getElementById('desencriptar-boton-mobile');
     llave.style.display = 'none';
     candado.style.display = 'none';
     candadoOn.style.display = 'none';

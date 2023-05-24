@@ -82,7 +82,10 @@ header > h1 {
     align-items: center;
 }
 
-#encriptar, #desencriptar {
+#encriptar,
+#encriptar-mobile, 
+#desencriptar,
+#desencriptar-mobile {
     margin: 0 auto;
     width: 80%;
     height: 50%;
@@ -90,7 +93,8 @@ header > h1 {
     border-radius: 12px;
 }
 
-#area, #area-mobile {
+#area, 
+#area-mobile {
     background: transparent;
     border: none;
     width: 100%;
@@ -100,7 +104,8 @@ header > h1 {
     outline: none;
 }
 
-#encriptar {
+#encriptar,
+#encriptar-mobile {
     display: grid;
     align-items: center;
     background: linear-gradient(
@@ -111,7 +116,7 @@ header > h1 {
       linear-gradient(336deg, rgba(21, 217, 243, 0.856), rgba(0, 0, 255, 0) 70.71%);   
 }
 
-#encriptar-boton{
+#encriptar-boton {
     width: 90%;
     height: 68%;
     margin: 0 auto;
@@ -122,30 +127,39 @@ header > h1 {
     font-size: medium;
 }
 
-#encriptar, #encriptar-boton:hover {
+#encriptar, 
+#encriptar-boton:hover {
     cursor: pointer;
 }
 
-#engrane1, #engrane2, #engrane3 {
+#engrane1,
+#engrane1-mobile, 
+#engrane2,
+#engrane2-mobile,
+#engrane3,
+#engrane3-mobile {
     position: absolute;
     display: none;
 }
 
-#engrane1 {
+#engrane1,
+#engrane1-mobile {
     margin: 42px;
     margin-top: 80px;
     font-size: 45px;
     filter: drop-shadow(0px 5px 5px black);
     animation: slidein 1s  linear forwards;
 }
-#engrane2 {
+#engrane2,
+#engrane2-mobile {
     margin: 25px;
     margin-top: 20px;
     font-size: 35px;
     filter: drop-shadow(0px 5px 5px black);
     animation: slidein 1s  linear forwards;
 }
-#engrane3 {
+#engrane3,
+#engrane3-mobile {
     margin: 55px;
     margin-top: 20px;
     font-size: 30px;
@@ -202,12 +216,18 @@ header > h1 {
     cursor: pointer;
 }
 
-#llave, #candado, #candadoOn {
+#llave,
+#llave-mobile,
+#candado,
+#candado-mobile,
+#candadoOn,
+#candadoOn-mobile {
     position: absolute;
     display: none;
 }
 
-#llave {
+#llave,
+#llave-mobile {
     margin: 42px;
     margin-top: 80px;
     font-size: 35px;
@@ -226,7 +246,8 @@ header > h1 {
         opacity: 0;
     }
   }
-#candado {
+#candado,
+#candado-mobile {
     margin: 25px;
     margin-top: 20px;
     font-size: 60px;
@@ -245,7 +266,8 @@ header > h1 {
         opacity: 0; 
     }
   }
-#candadoOn {
+#candadoOn,
+#candadoOn-mobile {
     margin: 25px;
     margin-top: 20px;
     font-size: 60px;
@@ -347,6 +369,21 @@ footer {
 }
 
 @media (max-width: 800px) {
+    #encriptar-boton {
+        width: 90%;
+        font-size: small;
+    }
+    #encriptar {
+        width: 40%;
+    }
+    #desencriptar-boton {
+        width: 90%;
+        font-size: small;
+    }
+    #desencriptar {
+        width: 40%;
+    }
+
     .contenedor-texto-mobile{
         display: none;
     }
@@ -409,7 +446,7 @@ footer {
         align-items: center;
     }
 
-    #encriptar, #desencriptar {
+    #encriptar-mobile, #desencriptar-mobile {
         width: 60px;
         height: 60px;
         border: none;
@@ -417,12 +454,12 @@ footer {
         
     }
 
-    #encriptar > img, #desencriptar > img {
+    #encriptar-mobile > img, #desencriptar-mobile > img {
        width: 80%;
        height: 80%;
        margin: 0 auto;
     }
-    #desencriptar {
+    #desencriptar-mobile {
         display: grid;
         align-items: center;
         background: linear-gradient(
@@ -466,4 +503,4 @@ footer {
             opacity: 1;
         }
     }
-  }
+  } 
