@@ -179,12 +179,12 @@ function copiar(){
     textDesencriptar.select()
     document.execCommand('copy')
     window.getSelection().removeAllRanges()   
-    alert(textDesencriptar.value)
+    alert('copiaste: '+ textDesencriptar.value)
 }
 //funcion de copiar mobile
 function copiarMobileText(){
     inputText.select()
     document.execCommand('copy')
     window.getSelection().removeAllRanges()   
-    alert(inputText.value)
+    alert('copiaste: '+ inputText.value)
 }

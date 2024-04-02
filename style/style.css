@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-rows: 10% 85% 5%;
@@ -506,12 +506,33 @@ footer {
   } 
 
 @media screen and (min-width: 2510px) {
-    body {
-        max-width: 100vw;
-       grid-template-columns: 20vw auto 20vw;
+
+    header {
+        font-size: 70px;
     }
 
-    #container-all{
-        grid-column: 2;
+    header > img {
+        width: 140px;
+        height: 100px;
     }
+
+    .centro-pagina {
+        max-width: 100vw;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+    }
+
+    .contenedor-texto {
+        grid-column: 2;
+        height: auto;
+        font-size: 18px;
+    }
+
+    aside {
+        grid-column: 3;
+        height: auto;
+        font-size: 18px;
+    }
+
 }
